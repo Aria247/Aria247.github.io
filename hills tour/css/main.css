@@ -1,0 +1,249 @@
+body {
+  overflow-x: hidden; /*--right gutter fix--*/
+  font-family: sans-serif;
+  color: #505962;
+}
+
+h1 {
+  text-align: center;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #000;
+  font-size: 24px;
+}
+
+.navbar {
+  text-transform: uppercase;
+  background-color: #D3D3D3;
+}
+
+.navbar-brand img {
+  height: 60px;
+}
+
+.home-inner {
+  background-image: url("../img/52e677af-2b73-428e-9522-fd60539364c3-original.jpeg");  
+}
+
+.caption {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+}
+
+.caption h3 {
+  color: #2F4F4F;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+}
+
+.btn {
+  color: #2F4F4F;
+  border-width: medium;
+  border-radius: 0;
+  border-color: #2F4F4F;
+  text-transform: uppercase;
+  padding: .5rem 1.1rem;
+  font-size: 1.3rem;
+}
+
+.image-fluid {
+  width: 100%;
+}
+
+.padding {
+  padding: 2rem;
+}
+
+
+.no-padding .col-md-6 {
+  padding: 0;
+}
+
+.carousel-inner img {
+  width: 60%;
+  height: 70%;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-caption h1 {
+  font-size: 500%;
+  text-transform: uppercase;
+}
+
+.carousel-caption h3 {
+  font-size: 200%;
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+
+.tours {
+  background-color: #F5F5DC;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+
+.slides {
+    padding: 0;
+    width: 750px;
+    height: 420px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input { display: none; }
+
+.slide-container { display: block; }
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 609px;
+    height: 420px;
+    display: block;
+    position: absolute;
+
+    transform: scale(0);
+
+    transition: all .7s ease-in-out;
+}
+
+.slide img {
+    width: 750px;
+    height: 420px;
+}
+
+.nav label {
+    width: 200px;
+    height: 100%;
+    display: none;
+    position: absolute;
+
+    opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+
+    transition: opacity .2s;
+
+    color: #FFF;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 380px;
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover + .nav label { opacity: 0.5; }
+
+.nav label:hover { opacity: 1; }
+
+.nav .next { right: 0; }
+
+input:checked + .slide-container  .slide {
+    opacity: 1;
+
+    transform: scale(1);
+
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label { display: block; }
+
+.nav-dots {
+  width: 100%;
+  bottom: 9px;
+  height: 11px;
+  display: block;
+  position: absolute;
+  text-align: center;
+}
+
+.nav-dots .nav-dot {
+  top: -5px;
+  width: 11px;
+  height: 11px;
+  margin: 0 4px;
+  position: relative;
+  border-radius: 100%;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-dots .nav-dot:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6 {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.footer .row {
+  background-color: #505962;
+  color: #fff;
+  padding: 1rem 2rem 3rem;
+}
+
+.footer img {
+  margin: 1.5rem 0;
+  height: 4rem;
+}
+
+
+
+/*--- iOS Landing Page Fix --*/
+.landing {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: table;
+  background: #E9ECEF;
+  z-index: -1;
+}
+.home-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.home-inner {
+  position: fixed;
+  display: table;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
