@@ -24,7 +24,7 @@
 		</button>
 		<div class="collapse navbar-collapse" id="menu">
 			<ul class="navbar-nav ml-auto">
-				<li class="nav-item">
+				<li class="nav-item active">
 					<a href="#home" class="nav-link">
 						Home
 					</a>
@@ -110,77 +110,57 @@
 	<h1 class="padding">
 		TOURS
 	</h1>
-	<ul class="slides">
-    	<input type="radio" name="radio-btn" id="img-1" checked />
-    <li class="slide-container">
-		<div class="slide">
-			<img src="img/Vagnini_091316_0373_Main_lg.jpg" />
-        </div>
-		<div class="nav">
-			<label for="img-6" class="prev">&#x2039;</label>
-			<label for="img-2" class="next">&#x203a;</label>
-		</div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-2" />
-    	<li class="slide-container">
-        	<div class="slide">
-          		<img src="img/winter-hike-woman.jpg" />
-        	</div>
-			<div class="nav">
-				<label for="img-1" class="prev">&#x2039;</label>
-				<label for="img-3" class="next">&#x203a;</label>
-			</div>
-    	</li>
-    <input type="radio" name="radio-btn" id="img-3" />
-    	<li class="slide-container">
-        	<div class="slide">
-          		<img src="img/PizNair_Header_angepasst.jpeg" />
-        	</div>
-			<div class="nav">
-				<label for="img-2" class="prev">&#x2039;</label>
-				<label for="img-4" class="next">&#x203a;</label>
-			</div>
-    	</li>
-    <input type="radio" name="radio-btn" id="img-4" />
-    	<li class="slide-container">
-        	<div class="slide">
-          		<img src="img/marten_blixt.jpg" />
-        	</div>
-			<div class="nav">
-				<label for="img-3" class="prev">&#x2039;</label>
-				<label for="img-5" class="next">&#x203a;</label>
-			</div>
-    	</li>
-    <input type="radio" name="radio-btn" id="img-5" />
-    	<li class="slide-container">
-        	<div class="slide">
-          		<img src="img/150221-547.jpg" />
-        	</div>
-			<div class="nav">
-				<label for="img-4" class="prev">&#x2039;</label>
-				<label for="img-6" class="next">&#x203a;</label>
-			</div>
-    	</li>
-    <input type="radio" name="radio-btn" id="img-6" />
-    	<li class="slide-container">
-        	<div class="slide">
-          		<img src="img/1406-laurancerockefellerpreserve-132-1280x853 (1).jpg" />
-        	</div>
-			<div class="nav">
-				<label for="img-5" class="prev">&#x2039;</label>
-				<label for="img-1" class="next">&#x203a;</label>
-			</div>
-    	</li>
-    	<li class="nav-dots">
-      		<label for="img-1" class="nav-dot" id="img-dot-1"></label>
-      		<label for="img-2" class="nav-dot" id="img-dot-2"></label>
-      		<label for="img-3" class="nav-dot" id="img-dot-3"></label>
-      		<label for="img-4" class="nav-dot" id="img-dot-4"></label>
-      		<label for="img-5" class="nav-dot" id="img-dot-5"></label>
-      		<label for="img-6" class="nav-dot" id="img-dot-6"></label>
-    	</li>
+	<div id="slides" class="carousel slide text-center" data-ride="carousel">
+	<ul class="carousel-indicators">
+		<li data-target="#slides" data-slide-to="0" class="active">
+			
+		</li>
+		<li data-target="#slides" data-slide-to="1">
+			
+		</li>
+		<li data-target="#slides" data-slide-to="2">
+			
+		</li>
+		<li data-target="#slides" data-slide-to="3">
+			
+		</li>
+		<li data-target="#slides" data-slide-to="4">
+			
+		</li>
+		<li data-target="#slides" data-slide-to="5">
+			
+		</li>
 	</ul>
+	<div class="carousel-inner">
+		<div class="carousel-item active">
+			<img src="img/winter-hike-woman.jpg" alt="background">
+			<div class="carousel-caption">
+			</div>
+		</div>
+		<div class="carousel-item">
+			<img src="img/PizNair_Header_angepasst.jpeg" alt="background">
+		</div>
+		<div class="carousel-item">
+			<img src="img/Vagnini_091316_0373_Main_lg.jpg" alt="background">
+		</div>
+		<div class="carousel-item">
+			<img src="img/marten_blixt.jpg" alt="background">
+		</div>
+		<div class="carousel-item">
+			<img src="img/150221-547.jpg" alt="background">
+		</div><div class="carousel-item">
+			<img src="img/hiking-gear-checklist.jpg" alt="background">
+		</div>
+	</div>
+	<a class="carousel-control-prev" href="#slides" role="button" data-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	    <span class="sr-only">Previous</span>
+	</a>
+    <a class="carousel-control-next" href="#slides" role="button" data-slide="next">
+	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	    <span class="sr-only">Next</span>
+    </a>
+</div>
 </div> <!-- end of the tours section -->
 
 <!-- start testimonials section -->
