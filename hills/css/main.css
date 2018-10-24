@@ -64,27 +64,6 @@ h1 {
   padding: 0;
 }
 
-.carousel-inner img {
-  width: 60%;
-  height: 70%;
-}
-
-.carousel-caption {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.carousel-caption h1 {
-  font-size: 500%;
-  text-transform: uppercase;
-}
-
-.carousel-caption h3 {
-  font-size: 200%;
-  font-weight: 500;
-  padding-bottom: 1rem;
-}
 
 .tours {
   background-color: #F5F5DC;
@@ -122,9 +101,7 @@ h1 {
     height: 420px;
     display: block;
     position: absolute;
-
     transform: scale(0);
-
     transition: all .7s ease-in-out;
 }
 
@@ -138,13 +115,10 @@ h1 {
     height: 100%;
     display: none;
     position: absolute;
-
     opacity: 0;
     z-index: 9;
     cursor: pointer;
-
     transition: opacity .2s;
-
     color: #FFF;
     font-size: 156pt;
     text-align: center;
@@ -215,6 +189,46 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
   height: 4rem;
 }
 
+
+@media (max-width: 768px) {
+  .slide img {
+    width: 550px;
+    height: 320px;
+ }
+ .nav label.prev, label.next {
+    width: 100px;
+    height: 76%;
+  }
+  .nav label.next {
+    right: 200px;
+  }
+  .nav-dots {
+  width: 100%;
+  right: 90px;
+  bottom: 120px;
+  height: 11px;
+  }
+}
+
+@media (max-width: 576px) {
+  .slide img {
+    width: 420px;
+    height: 280px;
+ }
+ .nav label.prev, label.next {
+    width: 70px;
+    height: 67%;
+  }
+  .nav label.next {
+    right: 330px;
+  }
+  .nav-dots {
+  width: 100%;
+  right: 165px;
+  bottom: 160px;
+  height: 11px;
+  }
+}
 
 
 /*--- iOS Landing Page Fix --*/
