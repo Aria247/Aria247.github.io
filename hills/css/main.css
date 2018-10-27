@@ -103,45 +103,6 @@ h1 {
 }
 
 
-@media (max-width: 768px) {
-  .slide img {
-    width: 550px;
-    height: 320px;
- }
- .nav label.prev, label.next {
-    width: 100px;
-    height: 76%;
-  }
-  .nav label.next {
-    right: 200px;
-  }
-  .nav-dots {
-  width: 100%;
-  right: 90px;
-  bottom: 120px;
-  height: 11px;
-  }
-}
-
-@media (max-width: 576px) {
-  .slide img {
-    width: 420px;
-    height: 280px;
- }
- .nav label.prev, label.next {
-    width: 70px;
-    height: 67%;
-  }
-  .nav label.next {
-    right: 330px;
-  }
-  .nav-dots {
-  width: 100%;
-  right: 165px;
-  bottom: 160px;
-  height: 11px;
-  }
-}
 
 
 /*--- iOS Landing Page Fix --*/
