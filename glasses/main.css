@@ -1,0 +1,82 @@
+body {
+  font-family: sans-serif;
+  color: #505962;
+  background: url(img/Skyscrapers_Houses_Bottom_view_531822_1280x853.jpg) no-repeat center center /cover;
+}
+
+strong {
+	text-transform: uppercase;
+	color: #98FB98;
+	text-shadow: 2px 2px 4px #000;
+}
+
+h1 {
+	padding: 8px;
+	text-shadow: 2px 2px 4px #000;
+	text-transform: uppercase;
+	color :#ADFF2F;
+}
+
+h3 {
+	padding: 7px;
+	text-transform: uppercase;
+	color: #2E8B57
+;
+}
+
+.text {
+	margin-top: 6%;
+	background-color: rgba(0, 0, 0, 0.4);
+	color: #fff;
+}
+
+img {
+	transition: transform .2s; 
+	width: 100%;
+	height: 100%;
+}
+
+img:hover {
+	transform: scale(1.1); 
+}
+
+.btn:hover {
+	color: #ADFF2F;
+}
+
+.subscripe input[type="text"] , .subscripe input[type="email"] {
+	padding: 6px 10px;
+	border-radius: 3px;
+}
+
+
+.fa {
+	transition: transform .2s; 
+    font-size: 30px;
+    width: 70px;
+}
+
+.fa:hover {
+    transform: scale(1.1); 
+}
+
+.fa-facebook {
+    color: #3B5998;
+}
+
+.fa-twitter {
+    color: #55ACEE;
+}
+
+.social {
+	margin-top: 15px;
+}
+
+@media (max-width: 576px) {
+	h1 {
+		font-size: 28px;
+	}
+	h3 {
+		font-size: 22px;
+	}
+}
